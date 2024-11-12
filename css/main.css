@@ -26,6 +26,6 @@ a {
     text-decoration: none;
 }
 ::selection{
-    background-color: rgb(32, 192, 255);
+    background-color: rgba(32, 192, 255, 0.25);
     color: #ffff;
 }
