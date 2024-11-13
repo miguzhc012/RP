@@ -37,11 +37,6 @@
 .bg-light{
     background-color: grey !important;
 }
-.navbar-brand img{
-    width: 150px;
-    margin-left: 400px;
-    cursor:default ;
-}
 .navbar {
     min-width: 320px;
     max-width: 100%;
@@ -66,9 +61,9 @@
     text-decoration: none;
     font-size: 25px;
 }
-.navbar, .navbar-expand-lg, .bg-body-tertiary{
-    padding: 0px;
-    
+.navbar-brand img{
+    border-radius: 50px;
+    width: 80px;
 }
 .orcamento{
     margin-top: 10px;
@@ -190,5 +185,5 @@ h1 {
     .info {
         gap: 5px;
         margin-left: 41px;
-    }
-}       
+       }
+}
