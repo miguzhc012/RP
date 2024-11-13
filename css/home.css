@@ -186,7 +186,7 @@ h1 {
 
 
 
-@media (max-width: 601px){
+@media (max-width: 1000px){
     .info {
         gap: 5px;
         margin-left: 41px;
