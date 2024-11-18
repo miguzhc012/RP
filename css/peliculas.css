@@ -1,29 +1,7 @@
-/* Pelicula de segurança */
-
-.pelicula{
-    margin-top: 25px;
+.subtitle{
+    margin: 0px;
+    padding: 0px;
 }
-.info-Pel{
-    display: flex;
-    justify-content: center;
-    min-width: 200px;
-    margin-bottom: 20px;
-}
-
-.subtitle p{
-    margin-bottom: 0px;
-}
-.pel{
-    border: solid 2px var(--black);
-    border-radius: 16px;
-    text-align: center;
-    display: grid;
-    width: 50%;
-    justify-content: center;
-}
-
-@media (max-width: 1000px){
-    .pel{
-        width: 99%;
-    }
+.card{
+    margin-top: 15px;
 }

@@ -5,12 +5,14 @@
     color: var(--blue);
     font-size: 35px;
     font-family: "Maven Pro", sans-serif;
+    margin-left: 15px;
 }
 .subtitle{
     color: var(--black);
     font-size: 18px;
     font-family: "Roboto", sans-serif;
     padding: 20px;
+    margin-left: 15px;
 }
 
 /* Navbar */
@@ -19,9 +21,14 @@
 }
 .dropdown-menu{
     background-color: grey;
+    width: 352.91px;
+    height: 240.5;
 }
 .dropdown-item{
     color: white;
+}
+.item{
+    padding: 0px;
 }
 .dropdown-item:hover{
     background-color: grey;
@@ -48,7 +55,7 @@
 
 }
 #atual{
-    color: var(--black);
+    color: #292626a4;
     font-size: 20px;
 }
 #atual:hover{
@@ -60,6 +67,14 @@
     color: var(--black);
     text-decoration: none;
     font-size: 25px;
+}
+.link-orc:hover{
+    cursor: default;
+    text-decoration: none;
+}
+.link-orc {
+    max-width: max-content;
+    border-radius: 50px;
 }
 .navbar-brand img{
     border-radius: 50px;
@@ -79,8 +94,10 @@
     padding-right: 10px;
     padding-bottom: 15px;
     padding-left: 10px;
+    margin-bottom: 10px;
 }
 .orcamento:hover{
+    cursor: pointer;
     background-color: #3baa8b;
     color: #d1d5db;
 }
@@ -127,28 +144,19 @@ h1 {
     max-width: max-content;
     gap: 20px;
 }
-.infoRP{
-    min-width: 200px;
-    max-width: 50%;
-    width: 50%;
-    display: grid;
-    justify-content: start;
-    text-align: center;
-    border: solid 2px var(--black);
-    border-radius: 16px;
-    align-items: baseline;
+
+.card .orcamento{
+    margin-left: 50px;
 }
-.infoRP a{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
+.card .orcamento:hover{
+    cursor: pointer;
 }
-.infoRP a:hover{
+.card a:hover{
     text-decoration: none;
     cursor: default;
 }
-.infoRP button:hover{
-    cursor: pointer;
+.inforp{
+    max-height: min-content;
 }
 
 /* Área de atendimento */
@@ -164,8 +172,7 @@ h1 {
 .loc{
     margin-top: 50px;
     display: grid;
-    justify-items: center;
-    width: 100%;
+    margin-left: 15px;
     margin-bottom: 120px;
 }
 .area-p{
@@ -186,4 +193,7 @@ h1 {
         gap: 5px;
         margin-left: 41px;
        }
+    .link-orc{
+        margin-left: 5px;
+    }
 }
