@@ -14,6 +14,9 @@
     padding: 20px;
     margin-left: 15px;
 }
+h1 {
+    font-size: 50px;
+}
 
 /* Navbar */
 .dropdown:hover > .dropdown-menu{
@@ -122,15 +125,14 @@
     justify-content: center;
     color: white;
 }
-h1 {
-    font-size: 50px;
-}
 
 .slogan{
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: rgba(0, 0, 0, 0.25);
     margin-top: 350px;
+    padding: 15px;
+    text-align: center;
 }
 
 /* Sobre */
