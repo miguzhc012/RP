@@ -16,6 +16,7 @@
 }
 h1 {
     font-size: 50px;
+    color: var(--color-primaria);
 }
 
 /* Navbar */
@@ -50,24 +51,34 @@ h1 {
 .navbar {
     min-width: 320px;
     max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin-bottom: 50px;
+}
+.link:hover{
+    color: var(--black);
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.25s;
 }
 .link {
     color: white;
     padding: 0px;
     margin-right: 35px;
+}
 
-}
-#atual{
-    color: #292626a4;
-    font-size: 20px;
-}
 #atual:hover{
-    color: var(--black);
+    color: var(--color-primaria);
     text-decoration: none;
     font-size: 25px;
 }
 .link:hover{
-    color: var(--black);
+    color: var(--color-primaria);
     text-decoration: none;
     font-size: 25px;
 }
@@ -84,25 +95,11 @@ h1 {
     width: 80px;
 }
 .orcamento{
-    margin-top: 10px;
-    background-color: #47d7ac;
-    color: white;
-    border:none;
-    border-radius: 50px;
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1em;
-    font-size: 1rem;
-    padding-top: 15px;
-    padding-right: 10px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
 }
 .orcamento:hover{
-    cursor: pointer;
-    background-color: #3baa8b;
-    color: #d1d5db;
+    color: var(--color-primaria);
 }
 .orcamento{
     display: flex;
@@ -133,61 +130,36 @@ h1 {
     margin-top: 350px;
     padding: 15px;
     text-align: center;
-}
-
-/* Sobre */
-.info{
-    margin-top: 25px;
-    max-height: max-content;
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin-left: 200px;
-    max-width: max-content;
-    gap: 20px;
-}
-
-.card .orcamento{
-    margin-left: 50px;
-}
-.card .orcamento:hover{
-    cursor: pointer;
-}
-.card a:hover{
-    text-decoration: none;
-    cursor: default;
-}
-.inforp{
-    max-height: min-content;
-}
-
-/* Área de atendimento */
-
-.loc strong{
-    font-size: 35px;
-    font-family: "Maven Pro", sans-serif;
-}
-.loc p strong{
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-}
-.loc{
-    margin-top: 50px;
-    display: grid;
-    margin-left: 15px;
-    margin-bottom: 120px;
-}
-.area-p{
-    width: 100%;
-    text-align: center;
-}
-.loc > div{
-    width: 40%;
-    min-width: 320px;
-    border: solid 2px var(--black);
     border-radius: 16px;
 }
 
+/* Cards */
+
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.card{
+    margin-top: 15px;
+}
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+    padding: 5px;
+}
+.card .btn{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 15px;
+    border-radius: 16px;
+}
 
 
 @media (max-width: 1000px){

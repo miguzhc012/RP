@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./image/RP_Logo_2.jpg" type="image/x-icon">
+
     <!-- Links CSS -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/home.css">
@@ -15,44 +18,40 @@
     <link rel="shortcut icon" href="./image/RP_Logo_2.png" type="image/x-icon">
 
     <!-- Titulo do site -->
-    <title>Rio Peliculas / Sobre nossa empresa</title>
+    <title>Rio Peliculas / Sobre nós</title>
 
+    
   </head>
   <body>
-    <div class="background">
-      <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="./image/RP_Logo.png" alt="Logomarca da Rio Peliculas"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="link"  href="./index.html">Home <span class="sr-only">(Página atual)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="  link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Peliculas
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./peliculas/pfume.html">Fumê</a>
-                <a class="dropdown-item" href="./peliculas/pjat.html">Jateada</a>
-                <a class="dropdown-item" href="./peliculas/pseg.html">Pelicula de Segurança</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="link" id="atual" href="#">Sobre nos</a>
-            </li>
-          </ul>
+
+    <div id="navbar"></div>
+    <script>
+    fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    })
+    .catch(error => console.error('Erro ao carregar a navbar:', error));
+  </script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center"><strong>Sobre a nossa empresa</strong></h1>
+            </div>
         </div>
-        <div>
-          <a class="link" href="https://api.whatsapp.com/send/?phone=5521995617699&text=Ol%C3%A1+gostaria+de+fazer+um+or%C3%A7amento.&type=phone_number&app_absent=0" target="_blank"><button class="orcamento">Solicite um orçamento agora</button></a>
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center">
+                  A Rio Películas foi criada para oferecer aos nossos clientes soluções que garantem proteção solar e privacidade, atendendo às suas necessidades de conforto e segurança. Nossa missão é transformar ambientes em espaços mais agradáveis e protegidos, com películas de alta qualidade e durabilidade.
+                </p>
+                <p class="text-center">
+                  Contamos com uma equipe dedicada, que oferece suporte e atendimento personalizado, garantindo a satisfação de nossos clientes em cada etapa do processo. Nosso serviço abrange quase todo o estado do Rio de Janeiro, sempre prezando pela segurança de nossa equipe e clientes, motivo pelo qual não realizamos atendimentos em regiões consideradas de alto risco. 
+                </p>
+                <p class="text-center">Na Rio Películas, não trabalhamos com películas tintadas devido à sua baixa qualidade perdendo sua tonalidade, e curta durabilidade. Priorizamos a aplicação de películas profissionais, que oferecem maior resistência, desempenho superior e garantia mínima de 5 anos, garantindo a satisfação e confiança de nossos clientes. </p>
+                <p class="text-center"><strong>Na Rio Películas, nosso compromisso é proporcionar conforto, proteção e um atendimento em que você pode confiar.</strong></p>
+            </div>
         </div>
-      </nav>
-      <div class="slogan">
-        <h1>Rio Películas - Proteção, estilo e privacidade.</h1>
-        <p>Instalação de insufilm em toda a cidade do Rio de Janeiro.</p>
-      </div>
-    </div>  
-  </body>
+    </div>
+</body>
 </html>

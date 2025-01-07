@@ -4,8 +4,9 @@
     --gray: #444444;
     --shadow: rgba(0, 0, 0, 0.25);
     --font-title: 'serif';
-    --font-size-default: 16px;
+    --font-size-default: 18px;
     --font-color-default: #111111;
+    --color-primaria: rgb(16, 159, 255);
 }
 
 * {
@@ -23,7 +24,6 @@ body{
 
 a {
     color: var(--gray);
-    text-decoration: none;
 }
 ::selection{
     background-color: rgba(32, 192, 255, 0.25);
