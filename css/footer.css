@@ -1,0 +1,77 @@
+/* Footer */
+
+.rodpe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0;
+    position: relative;
+    bottom: 0;
+}
+
+.sep{
+    width: 100%;
+    height: 0.5px;
+    background-color: #fff;
+}
+
+.rodpesep{
+    width: 100%;
+}
+.logo {
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 16px;
+}
+.logo:hover{
+    transform: scale(1.3);
+    transition: 0.25s;
+}
+
+/* Social Media */
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#facebook, #twitter, #instagram, #whatsapp, #gmail {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+#facebook{
+    background-color: #1877f2;
+}
+#twitter{
+    background-color: #1da1f2;
+}
+#instagram{
+    background-color: #c13584;
+}
+#whatsapp{
+    background-color: #25d366;
+}
+#gmail{
+    background-color: #ea4335;
+}
+
+#facebook:hover, #twitter:hover, #instagram:hover, #whatsapp:hover, #gmail:hover {
+    transform: scale(1.2);
+    transition: 0.25s;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .rodpe {
+        flex-direction: column;
+    }
+}

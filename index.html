@@ -21,35 +21,48 @@
   </head>
   <body>
     <div class="background">
-      <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="./image/RP_Logo.png" alt="Logomarca da Rio Peliculas"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="link" id="atual" href="#"><strong>Home</strong> <span class="sr-only">(Página atual)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="link" href="pelicula.html"><strong>Peliculas</strong></a>
-            </li>
-            <li class="nav-item">
-              <a class="link" href="./sobre.html"><strong>Sobre nos</strong></a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <a class="link-orc" href="https://api.whatsapp.com/send/?phone=5521995617699&text=Ol%C3%A1+gostaria+de+fazer+um+or%C3%A7amento.&type=phone_number&app_absent=0" target="_blank"><button class="orcamento btn btn-success">Solicite um orçamento agora</button></a>
-        </div>
-      </nav>
+      <div id="navbar">
+      </div>
+      <script>
+        fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar a navbar:', error));
+      </script>
+      
       <div class="slogan">
         <h1>Rio Películas <br> Proteção, estilo e privacidade.</h1>
-        <p>Instalação de insufilm em toda a cidade do Rio de Janeiro.</p>
+        <p>Instalação de insufilm em todo o Rio de Janeiro.</p>
       </div>
     </div>
+
+    <footer class="rodpe">
+      <div class="rodpesep">
+        <a href="./index.html"><img class="logo" src="./image/RP_Logo_2.jpg" alt="Logo Rio Peliculas"></a>
+        <span class="">&copy; 2025 Rio Peliculas</span>
+      </div>
+      <div class="rodpesep social-media">
+        <div id="facebook">
+          <a href="https://www.facebook.com/"><img src="./image/social-media-icon/Facebook.png" alt="Facebook" width="30px"></a>
+        </div>
+        <div id="twitter">
+          <a href="https://twitter.com/"><img src="./image/social-media-icon/Twiter.png" alt="Twitter" width="30px"></a>
+        </div>
+        <div id="instagram">
+          <a href="https://www.instagram.com/"><img src="./image/social-media-icon/Instagram.png" alt="Instagram" width="30px"></a>
+        </div>
+        <div id="gmail">
+          <a href=""><img src="./image/social-media-icon/Gmail.png" alt="Gmail" width="30px"></a>
+        </div>
+        <div id="whatsapp">
+          <a href=""><img src="./image/social-media-icon/Whatsapp.png" width="30px" alt="Whatsapp"></a>
+        </div>
+      </div>
+    </footer>
     
-    
+
   </body>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
