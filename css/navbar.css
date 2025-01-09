@@ -75,3 +75,15 @@
 .orcamento:focus{
     outline: 0;
 }
+
+@media screen and (max-width: 420px){
+    .corpo{
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 785px){
+    h1{
+        font-size: 30px;
+    }
+}

@@ -34,6 +34,10 @@
     transition: 0.25s;
 }
 
+.rodape {
+    padding-right: 200px;
+}
+
 /* Social Media */
 
 .social-media {
@@ -74,4 +78,10 @@
     .rodpe {
         flex-direction: column;
     }
+}
+@media screen and (max-width: 855px){
+    .rodape{
+        padding-right: 0;
+    }
+    
 }
