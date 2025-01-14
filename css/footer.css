@@ -43,7 +43,7 @@
     gap: 10px;
 }
 
-#facebook, #twitter, #instagram, #whatsapp, #gmail {
+#twitter, #instagram, #whatsapp, #gmail, #telefone {
     width: 40px;
     height: 40px;
     border-radius: 8px;
@@ -65,7 +65,11 @@
     background-color: #ea4335;
 }
 
-#facebook:hover, #twitter:hover, #instagram:hover, #whatsapp:hover, #gmail:hover {
+#telefone{
+    background-color: #ffffff;
+}
+
+#facebook:hover, #twitter:hover, #instagram:hover, #whatsapp:hover, #gmail:hover, #telefone:hover {
     transform: scale(1.2);
     transition: 0.25s;
 }
