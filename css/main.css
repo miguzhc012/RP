@@ -23,19 +23,9 @@ body{
 }
 
 a {
-    color: var(--gray);
+    color: var(--color-primaria);
 }
 ::selection{
     background-color: rgba(32, 192, 255, 0.25);
-    color: #bdb7b7;
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 80px;
-    scroll-padding-bottom: 80px;
-}
-
-body {
-    min-height: min-content;
+    color: #ffffff;
 }

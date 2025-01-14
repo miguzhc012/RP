@@ -15,11 +15,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 999;
-    /* margin-bottom: 50px; */
 }
 .link:hover{
     color: var(--black);
@@ -49,7 +44,7 @@
 }
 .link-orc {
     max-width: max-content;
-    border-radius: 50px;
+
 }
 .navbar-brand img{
     border-radius: 50px;

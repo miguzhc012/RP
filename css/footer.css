@@ -34,9 +34,6 @@
     transition: 0.25s;
 }
 
-.rodape {
-    padding-right: 200px;
-}
 
 /* Social Media */
 
@@ -51,18 +48,19 @@
     height: 40px;
     border-radius: 8px;
 }
-#facebook{
-    background-color: #1877f2;
-}
+
 #twitter{
-    background-color: #1da1f2;
+    background-color: rgba(29, 161, 242, 1);
 }
+
 #instagram{
     background-color: #c13584;
 }
+
 #whatsapp{
     background-color: #25d366;
 }
+
 #gmail{
     background-color: #ea4335;
 }
@@ -78,10 +76,4 @@
     .rodpe {
         flex-direction: column;
     }
-}
-@media screen and (max-width: 855px){
-    .rodape{
-        padding-right: 0;
-    }
-    
 }
